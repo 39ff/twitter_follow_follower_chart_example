@@ -9,7 +9,7 @@ header('X-Content-Type-Options: nosniff');
  * Time: 18:28
  */
 $screen_name = filter_input(INPUT_GET,'screen_name');
-if (!preg_match("/^[a-zA-Z0-9]+$/", $screen_name)) { exit; }
+if (!preg_match("/^[a-zA-Z0-9_]+$/", $screen_name)) { exit; }
 require '../config.php';
 
 try {
